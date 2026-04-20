@@ -15,11 +15,11 @@ dotenv.config({
 
 const app = express()
 app.use(cookieParser())
-connectToMongoDB('mongodb://localhost:27017/glowup').then(() => console.log("connected"))
+connectToMongoDB(process.env.MONGO_URI).then(() => console.log("connected"))
 
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://blossom-rosy.vercel.app",
     credentials: true
 }));
 app.use("/api/user", userRouter)
