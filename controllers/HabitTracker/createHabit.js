@@ -1,5 +1,5 @@
 import { HABIT } from "../../model/habit.js";
-import { HABITLOGS } from "../../model/habitLogs.js";
+import { HABITLOGS } from "../../model/habitlogs.js";
 
 const formatHabit = (h, completedDates = []) => ({
   id:             h._id.toString(),

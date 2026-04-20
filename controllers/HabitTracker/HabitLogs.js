@@ -1,4 +1,4 @@
-import { HABITLOGS } from "../../model/habitLogs.js";
+import { HABITLOGS } from "../../model/habitlogs.js";
 
 export const createHabitLog = async (req, res) => {
   try {
